@@ -83,7 +83,7 @@ export default {
                 console.log(i);
                 if (i.username == this.username && i.password == this.password) {
                     window.localStorage.user = JSON.stringify(i)
-                    window.localStorage.login = "true"
+                    window.localStorage.login = true
                     import.meta.env.VITE_LOGIN = true
                     this.$router.push("/")
                 }
